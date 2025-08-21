@@ -1,0 +1,274 @@
+/* CONFIGURAÇÕES UNIVERSAIS */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: 0.2s smooth;
+  background-color: var(--bg);
+}
+
+:root {
+  --main-color: #b48a58;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+
+#home {
+  scroll-margin-top: 1200px;
+}
+
+#menu {
+  scroll-margin-top: 100px;
+}
+
+/* NAVBAR - CONFIGURAÇÕES */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: var(--border);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(30px);
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar a {
+  margin: 0 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+  opacity: 90%;
+}
+
+.icons img {
+  transition: 0.2s linear;
+  padding: 1rem;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  opacity: 85%;
+  transform: scale(1.3);
+}
+
+/* HOME CONTAINER - CONFIGURAÇÕES */
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+section .content {
+  margin-right: 50rem;
+}
+
+.home {
+  text-align: center;
+  justify-content: center;
+}
+
+.home-container {
+  background: url("/assets/home-img.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 5rem;
+  align-items: center;
+  display: flex;
+}
+
+.content {
+  max-width: 60rem;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+
+/* configurações do título do banner */
+.content h3 {
+  color: #fff;
+  font-size: 4.8rem;
+}
+
+/* configurações do parágrafo do banner */
+.content p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+  line-height: 2.5rem;
+}
+
+/* configurações do botão do banner */
+.btn {
+  background: var(--main-color);
+  color: #fff;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+  border-radius: 5ch;
+}
+
+.btn:hover {
+  background: #7c613f;
+  transform: scale(1.05);
+}
+
+/* CARDAPIO - CONFIGURAÇÕES */
+#menu {
+  background-color: var(--bg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-container h2 {
+  color: #fff;
+  font-size: 3rem;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-car {
+  background: var(--main-color);
+  color: #fff;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+  border-radius: 5ch;
+}
+
+.btn-car:hover {
+  transform: scale(1.05);
+  background: #654d2f;
+}
+
+.xicara-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.cafe-container1,
+.cafe-container2 {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cafe-1,
+.cafe-2,
+.cafe-3,
+.cafe-4,
+.cafe-5,
+.cafe-6 {
+  border: var(--border);
+  margin: 0 1rem;
+  padding: 1.5rem 1.5rem;
+  width: 25rem;
+  height: 30rem;
+  border-radius: 2ch;
+  line-height: 2rem;
+  background-color: rgba(21, 21, 21, 0.5);
+
+  & img {
+    padding-bottom: 1rem;
+  }
+
+  & h3 {
+    padding-bottom: 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  & p {
+    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+#about-container {
+  background-color: var(--bg);
+  min-height: 100vh;
+  padding: 2.5rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  & .about-border {
+    border: var(--border);
+    border-color: var(--black);
+    border-radius: 5ch;
+    padding: 2rem 2rem;
+  }
+
+  & p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  & h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+  }
+}
+
+.about-image {
+  display: flex;
+  & img {
+    width: 30rem;
+    height: 30rem;
+    align-items: center;
+    padding-right: 100px;
+  }
+}
