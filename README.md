@@ -37,7 +37,7 @@ Este projeto simula o site de uma cafeteria moderna e responsiva. Seu principal 
 
 ## 📷 Demonstração
 
-*Adicione uma imagem ou GIF mostrando o site funcionando (ou um link para o GitHub Pages se estiver publicado).*
+Acesse: https://jwsbreal.github.io/devclub-cafeteria/
 
 ---
 
@@ -51,3 +51,4 @@ git clone https://github.com/jwsbreal/devclub-cafeteria.git
 cd devclub-cafeteria
 
 # Abra o arquivo index.html com seu navegador
+```
