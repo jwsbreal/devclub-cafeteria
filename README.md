@@ -45,7 +45,7 @@ Este projeto simula o site de uma cafeteria moderna e responsiva. Seu principal 
 
 ```bash
 # Clone este repositório
-git clone https://github.com/seu-usuario/devclub-cafeteria.git
+git clone https://github.com/jwsbreal/devclub-cafeteria.git
 
 # Acesse a pasta do projeto
 cd devclub-cafeteria
